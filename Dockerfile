@@ -15,7 +15,7 @@ COPY . ./
 RUN pnpm run build
 
 # start server
-EXPOSE 80
+# EXPOSE 80
 ENV MWB_SERVER__PORT=80
 ENV NODE_ENV=production
 CMD ["pnpm", "run", "start"]
